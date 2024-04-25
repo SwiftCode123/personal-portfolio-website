@@ -1219,15 +1219,26 @@ their cursor off the button*/
 
 .acmDayCountContainer
 {
-    background-color: #000;
-    border: solid 5px #87277a;
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    border-radius: 50px;
     height: 300px;
     width: 500px;
     color: #fff;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.acmDayCountContainerTextClass
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 55px;
 }
 
 .acmDayContainer

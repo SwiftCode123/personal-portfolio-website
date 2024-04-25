@@ -14,7 +14,6 @@ function scrollToTarget(offset) {
 /*
 For mobiles, scroll to a different part of the page
 */
-
 document.getElementById("scrollButton").addEventListener("click", function(event) 
 {
     event.preventDefault(); 
