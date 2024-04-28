@@ -371,7 +371,7 @@ their cursor off the button*/
 
 .header-title .wrapper a,
 .typeWriterContainer .projectButton a,
-.backButton a
+.backButton .projectButton a
 {
     position: relative;
     display: inline-block;
@@ -387,7 +387,7 @@ their cursor off the button*/
 
 .header-title .wrapper a:hover,
 .typeWriterContainer .projectButton a:hover,
-.backButton a:hover
+.backButton .projectButton a:hover
 {
     background-color: #0ef;
     color: #000;
@@ -398,14 +398,14 @@ their cursor off the button*/
 
 .header-title .wrapper a:not(hover),
 .typeWriterContainer .projectButton a:not(hover),
-.backButton a:not(hover)
+.backButton .projectButton a:not(hover)
 {
     transition: 1s;
 }
 
 .header-title .wrapper a:hover span:nth-child(1),
 .typeWriterContainer .projectButton a:hover span:nth-child(1),
-.backButton a:hover span:nth-child(1)
+.backButton .projectButton a:hover span:nth-child(1)
 {
     opacity: 0;
     transition: opacity 1s;
@@ -413,7 +413,7 @@ their cursor off the button*/
 
 .header-title .wrapper a:not(:hover) span:nth-child(1),
 .typeWriterContainer .projectButton a:not(hover) span:nth-child(1),
-.backButton a:not(hover) span:nth-child(1)
+.backButton .projectButton a:not(hover) span:nth-child(1)
 {
     opacity: 1;
     transition: opacity 3s; 
@@ -422,7 +422,7 @@ their cursor off the button*/
 
 .header-title .wrapper a span,
 .typeWriterContainer .projectButton a span,
-.backButton a span
+.backButton .projectButton a span
 {
     position: absolute;
     display: block;
@@ -430,7 +430,7 @@ their cursor off the button*/
 
 .header-title .wrapper a span:nth-child(1),
 .typeWriterContainer .projectButton a span:nth-child(1),
-.backButton .wrapper a span:nth-child(1)
+.backButton .projectButton a span:nth-child(1)
 {
     top: 0;
     left: 0;
@@ -1287,6 +1287,11 @@ their cursor off the button*/
     justify-content: center;
     text-align: center;
     font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.meetTheTeam
+{
     margin-bottom: 25px;
 }
 
