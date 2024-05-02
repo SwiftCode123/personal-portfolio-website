@@ -1,0 +1,58 @@
+*
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;   
+}
+
+/*background here (it is black)*/
+body 
+{
+    overflow-x: hidden;
+    /* place-items: center; */
+}
+
+/*Applies to all sections*/
+section
+{
+    padding: 25px;
+}
+
+.resumeSection
+{
+    padding-top: 100px;
+}
+
+.resumeOuterContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.resumeInnerContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.resumeInnerContainer img
+{
+    width: 100%;
+    border: solid 2px #000;
+    transition: transform 1s ease;
+}
+
+.resumeInnerContainer img:hover
+{
+    transform: scale(1.04);
+}
+
+@media(max-width: 500px)
+{
+    .resumeInnerContainer img
+    {
+        width: 100%;
+    }
+}
