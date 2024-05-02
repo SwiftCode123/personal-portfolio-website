@@ -1,0 +1,124 @@
+.epicsSection
+{
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+.epicsSection .epicsContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.epicsContainerRow
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.epicsImageContainer
+{
+    display: flex;
+    flex-basis: 30%;
+    z-index: 2;
+    margin-right: 20px;
+    transition: transform 1s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.epicsImageContainer:hover
+{
+    transform: scale(1.1);
+}
+
+.epicsImageContainer img
+{
+    width: 100%;
+}
+
+.epicsTextContainer
+{
+    text-align: center;
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+.epicsTextContainerPClass
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 25px;
+    flex-basis: 60%;
+}
+
+@media(max-width: 900px)
+{
+    .epicsContainerRow
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .epicsTextContainer
+    {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .epicsContainerTextPClassContainer
+    {
+        font-size: 16px;
+        padding: 25px;
+    }
+
+    .epicsImageContainer
+    {
+        flex-basis: 100%;
+        margin-left: 29px;
+        width: 50%;
+        display: inline;
+        margin-top: 20px;
+    }
+
+    .epicsTextContainer h1
+    {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.epicsUI
+{
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+}
+
+.epicsUIOuterContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.epicsUIInnerContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.epicsUIInnerContainer img 
+{
+    width: 70%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.epicsUIInnerContainer img:hover
+{
+    transform: scale(1.1);
+}
