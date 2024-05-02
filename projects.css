@@ -1,0 +1,365 @@
+/*Projects page - second page*/
+*
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;   
+}
+
+/*background here (it is black)*/
+body 
+{
+    overflow-x: hidden;
+    /* place-items: center; */
+}
+
+/*Applies to all sections*/
+section
+{
+    padding: 25px;
+}
+.wholeContainer
+{
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    padding-left: 10px;
+}
+.container-2
+{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 0 8%;
+}
+
+.row-2
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.service
+{
+    display: flex;
+    justify-content: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.service img
+{
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+.service:hover
+{
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+
+@media(max-width: 280px)
+{
+    .row-2
+    {
+        grid-template-columns: repeat(auto-fit, minmax(250px, .5fr));
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/*END OF ABOVE CODE*/
+/*ACM PROJECTS PAGE*/
+.acmProjectDesc
+{
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+}
+
+.acmProjects
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    overflow-x: hidden;
+}
+
+.acmProjects .acmProject-container .acmProject-container-title img
+{
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.acmProject-container .acmProject-container-title
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.acmFullName
+{
+    text-align: center;
+}
+
+@media(max-width: 280px)
+{
+    .acmProjects .acmProject-container .acmProject-container-title img
+    {
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .acmProject-container .acmProject-container-title
+    {
+        flex-direction: column;
+    }
+
+    .acmProjects .acmProject-container .acmProject-container-title img
+    {
+        margin-right: 0;
+    }
+    
+    .acmTitle
+    {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+}
+
+/*Timeline*/
+.timelineContainer
+{
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.timeline
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    z-index: 1;
+}
+
+.timelineContainer .timeline .container-4
+{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: moveDown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes moveDown
+{
+    0%
+    {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.timeline .container-4:nth-child(1)
+{
+    animation-delay: 0s;
+}
+
+.timeline .container-4:nth-child(2)
+{
+    animation-delay: 1s;
+}
+
+.timeline .container-4:nth-child(3)
+{
+    animation-delay: 3s;
+}
+
+.timeline .container-4:nth-child(4)
+{
+    animation-delay: 4s;
+}
+
+.timeline .container-4:nth-child(5)
+{
+    animation-delay: 5s;
+}
+
+.text-box-container
+{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 25px;
+    z-index: 10;
+}
+
+.left-container
+{
+    left: 0;
+}
+
+.right-container
+{
+    left: 50%;
+}
+
+.container-4 img
+{
+    position: absolute;
+    width: 40px;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img
+{
+    left: -20px;    
+}
+
+.timeline::after
+{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0%
+    {
+        height: 0;
+    }
+    100%
+    {
+        height: 100%;
+    }
+}
+
+.text-box-container h2
+{
+    font-weight: 600;
+}
+
+.text-box-container small
+{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow
+{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+
+.right-container-arrow
+{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: -1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+@media(max-width: 600px)
+{
+    .timelineContainer .timeline
+    {
+        margin: 50px auto;
+    }
+
+    .timelineContainer .timeline::after
+    {
+        left: 31px;
+    }
+
+    .timelineContainer .timeline .container-4
+    {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px
+    }
+
+    .timelineContainer .timeline .container-4 .text-box-container
+    {
+        font-size: 13px;
+    }
+
+    .timelineContainer .timeline .container-4 .text-box-container small
+    {
+        margin-bottom: 10px;
+    }
+
+    .right-container
+    {
+        left: 0;
+    }
+
+    .left-container img, .right-container img
+    {
+        left: 10px;
+    }
+
+    .left-container-arrow, .right-container-arrow
+    {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+@media(max-width: 320px)
+{
+    .timelineContainer .timeline .container-4 .text-box-container
+    {
+        font-size: 9px;
+    }
+
+    .timelineContainer .timeline .container-4 .text-box-container h2
+    {
+        font-size: 8px;
+    }
+}
+/*END OF TIMELINE PAGE*/

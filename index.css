@@ -1,0 +1,523 @@
+/*For index page - first page*/
+*
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;   
+}
+
+/*background here (it is black)*/
+body 
+{
+    overflow-x: hidden;
+    /* place-items: center; */
+}
+
+/*Applies to all sections*/
+section
+{
+    padding: 25px;
+}
+/*For header title*/
+
+.header-title
+{
+    min-height: 80vh;
+    /* background-color: rgb(0, 0, 0); */
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    justify-content: center;
+    text-align: center;
+}
+
+/*Basically what this does is that the first animation
+"Hello there... is initially present and then the height of it
+changes to 0 and the 2nd animation "My name is..." takes it place.
+This was done because I wanted to center the 2nd animation and it
+was pushing the 1st animation upward and obscuring the text so
+now the 1st div is no longer present and no longer
+occupies any space"*/
+
+.greeting-text 
+{
+    opacity: 1;
+    visibility: visible;
+    height: 0px; 
+    transition: opacity 1s, visibility 0s linear 1s;
+}
+
+.greeting-text.fade-out 
+{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+/*DO NOT REMOVE... otherwise it will mess up the positioning
+of the header on smaller screens*/
+
+@media(max-width: 320px)
+{
+    .header-title
+    {
+        padding-top: 100px;
+        min-height: 150vh; 
+    }
+}
+
+/*Has to do with header containers and fade-in and fade-out of it*/
+
+.header-title .text-container
+{
+    height: 58vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 120px;
+}
+
+@media(max-width: 768px) 
+{
+    nav a span 
+    {
+        border-bottom: 2px solid #0ef;
+        width: 25%;
+        left: 37.5%;
+    }
+}
+
+@keyframes fade-out 
+{
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.header-title .text-container .text01 
+{
+    opacity: 1;
+    animation: fade-out 3s forwards;
+    animation-delay: 1s;
+}
+
+.text02andstyle
+{
+    padding: 20px;
+}
+
+@media(max-width: 320px)
+{
+    .text02andstyle
+    {
+        height: 100%;
+    }
+}
+
+@keyframes fade-in 
+{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.text02, .text02-style
+{
+    opacity: 0; 
+    animation: fade-in 3s forwards; 
+    animation-delay: 4s;
+}
+
+.text02-style
+{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+@media(max-width: 455px)
+{
+    .header-title .text-container
+    {
+        height: 500px;
+    }
+} 
+
+@media(max-width: 280px)
+{
+    .header-title .text-container
+    {
+        height: 500px;
+    }  
+}
+
+/*Basically what this does is the animation is animating when the 
+user is NOT hovering over it and then animation "stop". Well,
+it doesnt' actually stop but the opacity turns to 0 giving it 
+the illusion of stopping and the animation resumes after the user lifts
+their cursor off the button*/
+
+.header-title .wrapper a,
+.typeWriterContainer .projectButton a,
+.backButton .projectButton a
+{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #0ef;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.header-title .wrapper a:hover,
+.typeWriterContainer .projectButton a:hover,
+.backButton .projectButton a:hover
+{
+    background-color: #0ef;
+    color: #000;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px #0ef, 0 0 200px #0ef;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    transition: 1s;
+}
+
+.header-title .wrapper a:not(hover),
+.typeWriterContainer .projectButton a:not(hover),
+.backButton .projectButton a:not(hover)
+{
+    transition: 1s;
+}
+
+.header-title .wrapper a:hover span:nth-child(1),
+.typeWriterContainer .projectButton a:hover span:nth-child(1),
+.backButton .projectButton a:hover span:nth-child(1)
+{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.header-title .wrapper a:not(:hover) span:nth-child(1),
+.typeWriterContainer .projectButton a:not(hover) span:nth-child(1),
+.backButton .projectButton a:not(hover) span:nth-child(1)
+{
+    opacity: 1;
+    transition: opacity 3s; 
+}
+
+
+.header-title .wrapper a span,
+.typeWriterContainer .projectButton a span,
+.backButton .projectButton a span
+{
+    position: absolute;
+    display: block;
+}
+
+.header-title .wrapper a span:nth-child(1),
+.typeWriterContainer .projectButton a span:nth-child(1),
+.backButton .projectButton a span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #0ef);
+    animation-delay: .5s;
+    animation: animate1 1s infinite;
+}
+
+
+@keyframes animate1 
+{
+    0% 
+    {
+        left: -100%;
+    }
+    100% 
+    {
+        left: 100%;
+    }
+}
+
+.image
+{
+    flex-basis: 30%;
+    z-index: 2;
+    margin-right: 20px;
+    border: 2px solid #0a0aac80;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: 1s;
+    background-color: #fff;
+}
+
+.image:hover
+{
+    transform: scale(1.1);
+}
+
+.about 
+{
+    padding: 60px 0;
+    background: radial-gradient(ellipse, #0a0aac80, #0000ffc2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
+
+.content {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-basis: 60%;
+    padding-left: 20px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.about-text
+{
+    text-align: center;
+    max-width: 500px;
+    margin-right: 30px;
+    line-height: 23px;
+}
+
+.image {
+    z-index: 2;
+}
+
+.image img {
+    width: 100%;
+}
+
+@media(max-width: 900px)
+{
+    .image
+    {
+        flex-basis: 100%;
+        margin-left: 29px;
+    }
+
+    .image img
+    {
+        width: 50%;
+        display: inline;
+        margin-top: 20px;
+    }
+
+    .row
+    {
+        justify-content: center;
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    .about-text
+    {
+        font-size: 16px;
+    }
+}
+
+/*For the typing text animation*/
+.typeWriterContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.textContainer
+{
+    width: 246px;
+    margin-bottom: 20px;
+}
+
+.textContainer .text
+{
+    position: relative;
+    color: #0ef;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.textContainer .text.first-text
+{
+    font-size: 30px;
+    color: #fff;
+}
+
+.text.sec-text::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-left: 2px solid #0ef;
+    animation: animate 4s steps(12) infinite;   
+}
+
+@keyframes animate {
+    40%, 60%
+    {
+        left: calc(100% + 4px);
+    }
+    100%
+    {
+        left: 0%;
+    }
+}
+/* 
+.textContainer .sec-text
+{
+    font-size: 30px;
+} */
+
+@media (max-width: 900px) 
+{
+    .textContainer .sec-text 
+    {
+        font-size: 25px;
+    }
+
+    .textContainer .text.first-text
+    {
+        font-size: 25px;
+        margin-left: 25px;
+    }
+}
+
+.projectsText
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/*For floating box animations*/
+
+.wrapperBox
+{
+    position: absolute;
+    width: 100%;
+    height: 87%;
+    overflow: hidden;
+}
+
+.box div
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.box div:nth-child(1)
+{
+    top: 12%;
+    left: 42%;
+    animation: animate2 10s linear infinite;
+}
+
+.box div:nth-child(2)
+{
+    top: 70%;
+    left: 50%;
+    animation: animate2 7s linear infinite;
+}
+
+.box div:nth-child(3)
+{
+    top: 17%;
+    left: 6%;
+    animation: animate2 9s linear infinite;
+}
+
+.box div:nth-child(4)
+{
+    top: 20%;
+    left: 60%;
+    animation: animate2 10s linear infinite;
+}
+
+.box div:nth-child(5)
+{
+    top: 67%;
+    left: 10%;
+    animation: animate2 6s linear infinite;
+}
+
+.box div:nth-child(6)
+{
+    top: 80%;
+    left: 70%;
+    animation: animate2 12s linear infinite;
+}
+
+.box div:nth-child(7)
+{
+    top: 60%;
+    left: 80%;
+    animation: animate2 15s linear infinite;
+}
+
+.box div:nth-child(8)
+{
+    top: 24%;
+    left: 25%;
+    animation: animate2 16s linear infinite;
+}
+
+.box div:nth-child(9)
+{
+    top: 88%;
+    left: 25%;
+    animation: animate2 9s linear infinite;
+}
+
+.box div:nth-child(10)
+{
+    top: 20%;
+    left: 80%;
+    animation: animate2 5s linear infinite;
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
