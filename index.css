@@ -47,13 +47,12 @@ occupies any space"*/
     transition: opacity 1s, visibility 0s linear 1s;
 }
 
-.greeting-text.fade-out 
+.greeting-text.fade-in
 {
     opacity: 0;
     visibility: hidden;
     height: 0;
 }
-
 /*DO NOT REMOVE... otherwise it will mess up the positioning
 of the header on smaller screens*/
 
@@ -107,6 +106,10 @@ of the header on smaller screens*/
 .text02andstyle
 {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media(max-width: 320px)
@@ -123,12 +126,14 @@ of the header on smaller screens*/
     100% { opacity: 1; }
 }
 
-.text02, .text02-style
+.text02, .text02-style,
+.text-container02
 {
     opacity: 0; 
     animation: fade-in 3s forwards; 
     animation-delay: 4s;
 }
+
 
 .text02-style
 {
@@ -520,4 +525,20 @@ their cursor off the button*/
         transform: scale(1.3) translateY(-90px) rotate(360deg);
         opacity: 0;
     }
+}
+
+/*Typing text animation in header*/
+.text02andstyle .text-container02
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+span 
+{
+    color: #0ef;
 }

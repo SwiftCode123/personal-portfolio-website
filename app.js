@@ -42,3 +42,9 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 12000);
 
+var typed = new Typed(".auto-type", {
+    strings: ["Curious", "Passionate", "Artistic"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+})
