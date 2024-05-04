@@ -429,8 +429,9 @@ their cursor off the button*/
 {
     position: absolute;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .box div
@@ -541,4 +542,12 @@ their cursor off the button*/
 span 
 {
     color: #0ef;
+}
+
+@media(max-height: 500px)
+{
+    .wrapperBox
+    {
+        min-height: 180vh;
+    }
 }

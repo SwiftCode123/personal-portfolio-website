@@ -1,0 +1,122 @@
+.gumProject
+{
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    overflow: hidden;
+}
+
+.gumProject .gumProjectContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.gumProjectContainerRow
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gumImageContainer 
+{
+    display: flex;
+    flex-basis: 39%;
+    z-index: 2;
+    margin-right: 20px;
+}
+
+.gumImageContainer img
+{
+    width: 100%;
+    transition: box-shadow 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.gumImageContainer img:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.gumProjectDescText
+{
+    text-align: center;
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+.gumProjectDescPClass
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 25px;
+    flex-basis: 60%;
+}
+
+@media(max-width: 900px)
+{
+    .gumProjectContainerRow
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .gumProjectDescText
+    {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .gumProjectContainerTextPClassContainer
+    {
+        font-size: 16px;
+        padding: 25px;
+    }
+
+    .gumImageContainer
+    {
+        flex-basis: 100%;
+        margin-left: 17px;
+        width: 50%;
+        display: inline;
+        margin-top: 20px;
+    }
+
+    .gumProjectDescText h1
+    {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*Image Gallery CSS*/
+.imageGallery
+{
+    overflow: hidden;
+}
+
+.imageGalleryContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.imageGalleryContainerContainer
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px; 
+}
+
+.imageGalleryContainer img 
+{
+    width: 100%;
+}
