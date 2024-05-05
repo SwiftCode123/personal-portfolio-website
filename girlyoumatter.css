@@ -134,6 +134,7 @@
 .techStack
 {
     background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    overflow: hidden;
 }
 
 .techStackContainer
@@ -219,4 +220,40 @@
 .techReadMore .btn:hover
 {
     letter-spacing: 1px;
+}
+
+/*Steps container CSS*/
+.steps
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: wrap;
+    gap: 30px;
+    overflow: hidden;
+}
+.stepContainer
+{
+    border: solid 2px #000;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stepContent
+{
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.stepContent .leftStepContent
+{
+    border-right: solid 1px #000;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    max-height: 50px;
 }
