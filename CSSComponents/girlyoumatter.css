@@ -222,6 +222,17 @@
     letter-spacing: 1px;
 }
 
+/*For ocr and figma image ONLY*/
+.teckStackImageWrap .ocrimage
+{
+    max-width: 120px;
+}
+
+.teckStackImageWrap .figmaImage
+{
+    max-width: 50px;
+}
+
 /*Steps container CSS*/
 .steps
 {
