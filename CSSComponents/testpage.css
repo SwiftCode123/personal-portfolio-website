@@ -1,0 +1,46 @@
+.testContainer
+{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contain 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.containRow
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 100px;
+}
+
+.imgwrap img 
+{
+    width: 100%;
+    min-height: 130px;
+    min-width: 130px;
+}
+
+.outterimgwrap
+{
+    max-width: 200px;
+}
+
+.hoveringContainer
+{
+    padding: 50px;
+    transition: transform 1s, background 1s;
+}
+
+.hoveringContainer:hover 
+{
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
