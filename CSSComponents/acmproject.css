@@ -13,6 +13,7 @@
     max-width: 500px;
     padding-right: 30px;
     line-height: 25px;
+    padding-bottom: 25px;
 }
 
 .acmProjectDescContentContainer h2
@@ -29,6 +30,7 @@
 {
     aspect-ratio: 16 / 9;
     width: 553px;
+    padding-bottom: 25px;
 }
 
 .iframe-container iframe
