@@ -20,20 +20,20 @@
 .gumImageContainer 
 {
     display: flex;
-    flex-basis: 39%;
+    flex-basis: 38%;
     z-index: 2;
     margin-right: 20px;
 }
 
 .gumImageContainer img
 {
-    width: 100%;
+    width: 90%;
     transition: box-shadow 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .gumImageContainer img:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -225,10 +225,10 @@
 /*Steps container CSS*/
 .steps
 {
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-flow: wrap;
     gap: 30px;
     overflow: hidden;
@@ -245,8 +245,8 @@
 {
     padding: 20px;
     display: flex; 
-    justify-content: center;
     gap: 20px;
+    border-bottom: solid 1px #000;
 }
 
 .stepContent .leftStepContent
