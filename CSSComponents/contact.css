@@ -1,0 +1,233 @@
+.contact
+{
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contactContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 1000px;
+}
+
+.fullName
+{
+    color: #000;
+}
+
+.contactContainer .contactInfo
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.contactContainer .contactInfo .contactBox
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    padding: 10px;
+    border-radius: 100px;
+    padding: 20px;
+    transition: box-shadow 1s ease-in-out;
+}
+
+.contactBox:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.contactContainer .contactInfo .contactBox .icon 
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contactContainer .contactInfo .contactBox .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    word-break: break-all;
+}
+
+.contactContainer .contactInfo .contactBox .text h3
+{
+    font-weight: 700;
+    color: #00bcd4;
+}
+
+.contactForm
+{
+    width: 60%;
+    padding: 40px;
+    background: #fff;
+    transition: transform 1s ease-in;
+}
+
+.contactForm:hover
+{
+    transform: scale(1.05);
+}
+
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;   
+}
+
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+/* .contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+} */
+
+.contactForm .inputBox input[type="submit"]
+{
+    width: auto;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+
+    .contactContainer
+    {
+        flex-direction: column;
+    }
+
+    .contactContainer .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+
+    .contactContainer .contactInfo,
+    .contactForm
+    {
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contactBox
+    {
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 300px)
+{
+    .contactBox
+    {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .icon
+    {
+        margin-left: 16px;
+        max-width: 60px;
+    }
+
+    .contactInfo
+    {
+        margin-right: 15px;
+    }
+}
+
+@media(max-width: 300px)
+{
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea
+    {
+        word-break: break-all;
+    }
+
+    .contactForm h2
+    {
+        font-size: 20px;
+        word-break: break-all;
+    }
+
+    .contactForm .inputBox span
+    {
+        font-size: 13px;
+    }
+
+    .contactForm 
+    {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}

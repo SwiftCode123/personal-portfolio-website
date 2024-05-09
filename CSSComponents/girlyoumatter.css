@@ -269,3 +269,11 @@
     max-height: 50px;
     text-align: center;
 }
+
+@media(max-width: 300px)
+{
+    .stepContainer
+    {
+        padding: 0;
+    }
+}

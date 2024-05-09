@@ -9,10 +9,115 @@
     <link rel="stylesheet" href="CSSComponents/acmproject.css">
     <link rel="stylesheet" href="CSSComponents/girlyoumatter.css">
     <link rel="stylesheet" href="CSSComponents/codepath.css">
+    <link rel="stylesheet" href="CSSComponents/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <a href="#" class="logo">Dhruv Tripathi</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0;">Home<span></span></a>
+            <!-- <a href="#" style="--i:1;">About<span></span></a> -->
+            <!-- <a href="#" style="--i:2;">Projects<span></span></a> -->
+            <a href="resume.html" style="--i:3;">Resume<span></span></a>
+            <a href="contact.html" style="--i:4;">Contact<span></span></a>
+        </nav>
+    </header>
+
+    <section class="acmProjects">
+        <div class="acmProject-container">
+            <div class="acmProject-container-title">
+                <img src="images/emailLogo.png">
+                <div class="acmProject-container-title-container">
+                    <div class="acmTitle">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <div class="acmFullName">
+                        <p>Get to know me more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contactContainer">
+            <div class="contactInfo">
+
+                <div class="contactBox">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="text">
+                        <h3>Name</h3>
+                        <p>Dhruv Tripathi</p>
+                    </div>
+                </div>
+
+                <div class="contactBox">
+                    <div class="icon"><i class="fa-solid fa-school"></i></i></div>
+                    <div class="text">
+                        <h3>School</h3>
+                        <p>University of Texas at Dallas</p>
+                    </div>
+                </div>
+
+                <div class="contactBox">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>dhruv.tr03@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contactForm">
+                <form action="https://formspree.io/f/moqovrvb" method="POST" class="comment-form">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Full Name" placeholder="Full Name" required="required">
+                        <span class="fullName"></span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="Email" placeholder="Email" required="required">
+                        <span class="fullName"></span>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea  name="message" required="required" placeholder="Your message here"></textarea>
+                        <span class="fullName"></span>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="backButton">
+        <div class="projectButton">
+            <a href="/projects.html" id="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Projects
+            </a>
+        </div>
+    </section>
+
 </body>
 </html>

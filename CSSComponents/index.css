@@ -235,6 +235,11 @@ their cursor off the button*/
     animation: animate1 1s infinite;
 }
 
+.backButton
+{
+    min-height: 10vh;
+}
+
 
 @keyframes animate1 
 {

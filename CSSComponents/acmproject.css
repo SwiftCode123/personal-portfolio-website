@@ -1,4 +1,9 @@
 /*ACM projects page description section*/
+.acmProjects
+{
+    overflow: hidden;
+}
+
 .acmProjectDescContainer
 {
     display: flex;
@@ -54,6 +59,12 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.acmTime
+{
+    color: #fff;
+    text-decoration: underline;
 }
 
 .backButton
