@@ -314,3 +314,10 @@
 {
     color: rgb(30, 30, 224);
 }
+
+.expertEvents {
+    background: linear-gradient(to right, #fed3bd, #f8474a); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
+}
