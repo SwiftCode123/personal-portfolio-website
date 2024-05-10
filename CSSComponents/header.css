@@ -94,6 +94,7 @@ to "DT" when it is on a mobile phone*/
     font-weight: 500;
     margin-left: .1rem;
     transition: .5s;
+    font-family: "Nunito";
 }
 
 nav a span
