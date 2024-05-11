@@ -101,6 +101,7 @@ of the header on smaller screens*/
     opacity: 1;
     animation: fade-out 3s forwards;
     animation-delay: 1s;
+    font-family: "Exo 2";
 }
 
 .text02andstyle
@@ -132,13 +133,23 @@ of the header on smaller screens*/
     opacity: 0; 
     animation: fade-in 3s forwards; 
     animation-delay: 4s;
+    font-family: "Exo 2";
 }
-
 
 .text02-style
 {
     font-size: 18px;
     padding-top: 10px;
+}
+
+.auto-type
+{
+    font-family: "Exo 2";
+}
+
+.text-container02 h3
+{
+    font-family: "Exo 2";
 }
 
 @media(max-width: 455px)
@@ -177,6 +188,7 @@ their cursor off the button*/
     font-size: 1.2rem;
     font-weight: bold;
     overflow: hidden;
+    font-family: "Rajdhani";
 }
 
 .header-title .wrapper a:hover,
@@ -301,12 +313,19 @@ their cursor off the button*/
     margin-top: 25px;
 }
 
+.content h2
+{
+    font-family: "Libre Franklin";
+    font-weight: 300;
+}
+
 .about-text
 {
     text-align: center;
     max-width: 500px;
     margin-right: 30px;
     line-height: 23px;
+    font-family: "Teachers";
 }
 
 .image {
@@ -374,6 +393,12 @@ their cursor off the button*/
 {
     font-size: 30px;
     color: #fff;
+    font-family: "Exo 2";
+}
+
+.textContainer .text.sec-text 
+{
+    font-family: "Exo 2";  
 }
 
 .text.sec-text::before
@@ -386,7 +411,7 @@ their cursor off the button*/
     width: 100%;
     background-color: #000;
     border-left: 2px solid #0ef;
-    animation: animate 4s steps(12) infinite;   
+    animation: animate 4s steps(12) infinite;  
 }
 
 @keyframes animate {

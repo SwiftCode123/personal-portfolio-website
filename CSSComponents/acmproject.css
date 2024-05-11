@@ -24,11 +24,18 @@
 .acmProjectDescContentContainer h2
 {
     margin-left: 30px;
+    font-family: "Libre Franklin";
+    font-weight: 300;
 }
 
 .acmProjectDescContentContainerText
 {
     margin-left: 30px;
+}
+
+.acmProjectDescContentContainerText p 
+{
+    font-family: "Teachers";
 }
 
 .iframe-container 
@@ -124,6 +131,12 @@
     margin-left: 30px;
 }
 
+.infoContainerText h1
+{
+    font-family: "Libre Franklin";
+    font-weight: 300;
+}
+
 .infoContainerTextPClass
 {
     display: flex;
@@ -132,6 +145,11 @@
     text-align: center;
     line-height: 25px;
     flex-basis: 60%;
+}
+
+.infoContainerTextPClassContainer
+{
+    font-family: "Teachers";
 }
 
 @media(max-width: 900px)

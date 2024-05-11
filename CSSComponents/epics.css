@@ -45,6 +45,17 @@
     margin-left: 30px;
 }
 
+.epicsTextContainer h1
+{
+    font-family: "Libre Franklin";
+    font-weight: 300;
+}
+
+.epicsContainerTextPClassContainer
+{
+    font-family: "Teachers";
+}
+
 .epicsTextContainerPClass
 {
     display: flex;

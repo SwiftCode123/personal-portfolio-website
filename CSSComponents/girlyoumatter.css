@@ -45,6 +45,17 @@
     margin-left: 30px;
 }
 
+.gumProjectDescText h2
+{
+    font-family: "Libre Franklin";
+    font-weight: 300;
+}
+
+.gumProjectContainerTextPClassContainer
+{
+    font-family: "Teachers";
+}
+
 .gumProjectDescPClass
 {
     display: flex;
