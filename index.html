@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="CSSComponents/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+      AOS.init();
+    </script>
 
     <!--Prolly a better way to do this :/-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,13 +124,13 @@
     <section class="about" id="myIntroduction">
         <div class="container">
             <div class="row">
-                <div class="image">
+                <div class="image" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/dhruvacmimage-removebg-preview.png" alt="">
                 </div>
                 <div class="content">
-                    <h2 class="">About me<br></h2><br>
+                    <h2 class="" data-aos="fade-right" data-aos-duration="1000">About me<br></h2><br>
                     <div class="content">
-                        <p class="about-text">
+                        <p class="about-text" data-aos="fade-right" data-aos-duration="1000">
                             Hey there, I'm <a href="https://www.linkedin.com/in/dhruv-tripathi-2a663227a/">Dhruv Tripathi</a>, a Computer Science undergraduate at the
                             <span class="UTD">University of Texas at Dallas</span> with plans to graduate in the Spring of 2027. 
                             My interests lie in software engineering, cybersecurity, and web development, where I'm always eager to explore and innovate. 
@@ -162,6 +165,11 @@
         </div>
     </section>
     <!--For linking of JavaScript-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

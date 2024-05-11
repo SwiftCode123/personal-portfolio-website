@@ -97,7 +97,7 @@ to "DT" when it is on a mobile phone*/
     font-family: "Nunito";
 }
 
-nav a span
+/* nav a span
 {
     position: absolute;
     top: 0;
@@ -110,13 +110,13 @@ nav a span
     transform: scale(0) translateY(50px);
     opacity: 0;
     transition: .5s;
-}
+} */
 
-nav a:hover span
+/* nav a:hover span
 {
     transform: scale(1) translateY(0);
     opacity: 1;
-}
+} */
 
 nav a:hover
 {
@@ -143,12 +143,6 @@ nav a:hover
     .header
     {
         padding: 1.3rem 5%;
-    }
-
-    nav a span 
-    {
-        width: 25%;
-        left: 37.5%;
     }
 }
 
