@@ -144,6 +144,12 @@ nav a:hover
     {
         padding: 1.3rem 5%;
     }
+
+    nav a span 
+    {
+        width: 25%;
+        left: 37.5%;
+    }
 }
 
 @media(max-width: 768px)
