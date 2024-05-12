@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script>
-      AOS.init();
-    </script>
 
     <!--Prolly a better way to do this :/-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,6 +118,8 @@
         </div>
     </section>
 
+    <!--https://github.com/michalsnik/aos for Animate on Scroll (AOS) Library-->
+
     <section class="about" id="myIntroduction">
         <div class="container">
             <div class="row">
@@ -145,12 +144,12 @@
     </section>
 
     <section class="typeWriterContainer">
-        <div class="textContainer">
+        <div class="textContainer" data-aos="zoom-in" data-aos-duration="1000">
             <span class="text first-text">I'm a</span>
             <span class="text sec-text"></span>
         </div>
 
-        <div class="projectsText">
+        <div class="projectsText" data-aos="zoom-in" data-aos-duration="3000">
             See my projects
         </div>
 

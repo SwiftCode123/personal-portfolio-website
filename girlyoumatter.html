@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="CSSComponents/acmproject.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="lightboxJS.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,11 +68,11 @@
         <section class="gumProject">
             <div class="gumProjectContainer">
                 <div class="gumProjectContainerRow">
-                    <div class="gumImageContainer">
+                    <div class="gumImageContainer" data-aos="fade-right" data-aos-duration="1000">
                         <a href="https://girlyoumatter.org"><img src="girlyoumatterimages/girlyoumatterSS.png">
                         </a>
                     </div>
-                    <div class="gumProjectDescText">
+                    <div class="gumProjectDescText" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Project Description</h2> <br>
                         <div class="gumProjectDescPClass">
                             <p class="gumProjectContainerTextPClassContainer">
@@ -92,35 +93,35 @@
         <section class="imageGallery">
             <div class="imageGalleryContainer">
                 <div class="imageGalleryContainerContainer"> <!--8 images for grid display (add more if needed)-->
-                    <a href="girlyoumatterimages/girlyoumatterSS.png" data-lightbox="models" data-title="Front page">
+                    <a href="girlyoumatterimages/girlyoumatterSS.png" data-lightbox="models" data-title="Front page" data-aos="fade" data-aos-duration="500">
                         <img src="girlyoumatterimages/girlyoumatterSS.png" alt="">
                     </a>
                     
-                    <a href="girlyoumatterimages/aboutuspage.png" data-lightbox="models" data-title="About us page">
+                    <a href="girlyoumatterimages/aboutuspage.png" data-lightbox="models" data-title="About us page" data-aos="fade" data-aos-duration="600">
                         <img src="girlyoumatterimages/aboutuspage.png" alt="">
                     </a>
 
-                    <a href="girlyoumatterimages/commentform1.png" data-lightbox="models" data-title="Contacts page comment form">
+                    <a href="girlyoumatterimages/commentform1.png" data-lightbox="models" data-title="Contacts page comment form"  data-aos="fade" data-aos-duration="700">
                         <img src="girlyoumatterimages/commentform1.png" alt="">
                     </a>
 
-                    <a href="girlyoumatterimages/commentform2.png" data-lightbox="models" data-title="Workshops page comment form">
+                    <a href="girlyoumatterimages/commentform2.png" data-lightbox="models" data-title="Workshops page comment form"  data-aos="fade" data-aos-duration="800">
                         <img src="girlyoumatterimages/commentform2.png" alt="">
                     </a>
 
-                    <a href="girlyoumatterimages/FAQ.png" data-lightbox="models" data-title="Frequently Asked Questions">
+                    <a href="girlyoumatterimages/FAQ.png" data-lightbox="models" data-title="Frequently Asked Questions"  data-aos="fade" data-aos-duration="900">
                         <img src="girlyoumatterimages/FAQ.png" alt="">
                     </a>
 
-                    <a href="girlyoumatterimages/whyyoumatter.png" data-lightbox="models" data-title="Why you matter - Front page">
+                    <a href="girlyoumatterimages/whyyoumatter.png" data-lightbox="models" data-title="Why you matter - Front page" data-aos="fade" data-aos-duration="1000">
                         <img src="girlyoumatterimages/whyyoumatter.png" alt="">
                     </a>
 
-                    <a href="girlyoumatterimages/workshopdetail.png" data-lightbox="models" data-title="Workshops description page">
+                    <a href="girlyoumatterimages/workshopdetail.png" data-lightbox="models" data-title="Workshops description page" data-aos="fade" data-aos-duration="1100">
                         <img src="girlyoumatterimages/workshopdetail.png" alt="">
                     </a>
 
-                    <a href="girlyoumatterimages/workshoppage.png" data-lightbox="models" data-title="Workshops - Front page">
+                    <a href="girlyoumatterimages/workshoppage.png" data-lightbox="models" data-title="Workshops - Front page"  data-aos="fade" data-aos-duration="1200">
                         <img src="girlyoumatterimages/workshoppage.png" alt="">
                     </a>
                     
@@ -137,7 +138,7 @@
 
     <section class="techStack">
         <div class="techStackContainer">
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1000">
 
                 <!--the image-->
 
@@ -166,7 +167,7 @@
             </div>
 
 
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1200">
 
                 <!--the image-->
 
@@ -195,7 +196,7 @@
             </div>
 
 
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1400">
 
                 <!--the image-->
 
@@ -223,7 +224,7 @@
 
             </div>
 
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1600">
 
                 <!--the image-->
 
@@ -255,7 +256,7 @@
     </section>
 
     <section class="steps">
-        <div class="stepContainer">
+        <div class="stepContainer" data-aos="zoom-out-down" data-aos-duration="1000">
             <div class="stepContent">
                 <div class="leftStepContent">
                     August 2023
@@ -315,6 +316,14 @@
             </a>
         </div>
     </section>
+
+    <!--For linking of JavaScript-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

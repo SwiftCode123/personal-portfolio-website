@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSSComponents/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,7 +71,7 @@
             <div class="containRow">
                 
                 <div class="hoveringContainer">
-                    <div class="outterimgwrap">
+                    <div class="outterimgwrap" data-aos="fade-left" data-aos-duration="2000">
                         <div class="imgwrap">
                             <a href="girlyoumatter.html"><img src="images/girlyoumatter-logo.png" alt="">
                             </a>
@@ -79,15 +80,15 @@
                 </div>
 
                 <div class="hoveringContainer">
-                    <div class="outterimgwrap">
+                    <div class="outterimgwrap" data-aos="fade-down" data-aos-duration="2000">
                         <div class="imgwrap">
-                            <a href="acmproject.html"><img src="images/acmutd.jpg" alt="">                            </a>
+                            <a href="acmproject.html"><img src="images/acmutd.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="hoveringContainer">
-                    <div class="outterimgwrap">
+                    <div class="outterimgwrap" data-aos="fade-right" data-aos-duration="2000">
                         <div class="imgwrap">
                             <a href="epics.html"><img src="images/epicslogo-removebg-preview.png" alt="">
                             </a>
@@ -96,7 +97,7 @@
                 </div>
 
                 <div class="hoveringContainer">
-                    <div class="outterimgwrap">
+                    <div class="outterimgwrap" data-aos="fade-right" data-aos-duration="2000">
                         <div class="imgwrap">
                             <a href="codepath.html"><img src="images/codepathlogo.jpg" alt="">
                             </a>
@@ -113,10 +114,10 @@
     <section class="info">
         <div class="infoContainer">
             <div class="infoContainerRow">
-                <div class="infoImageContainer">
+                <div class="infoImageContainer" data-aos="fade-right" data-aos-duration="1000">
                     <img src="images/programminglanguagesicon.jpg">
                 </div>
-                <div class="infoContainerText">
+                <div class="infoContainerText" data-aos="fade-left" data-aos-duration="2000">
                     <h1>What are these projects?</h1>
                     <div class="infoContainerTextPClass">
                         <p class="infoContainerTextPClassContainer">
@@ -138,7 +139,7 @@
 
     <!--Timeline section-->
     <section class="timelineContainer">
-        <div class="timeline">
+        <div class="timeline" data-aos="zoom-in" data-aos-duration="2000">
             <div class="container-4 left-container">
                 <img src="images/girlyoumatter-logo.png">
                 <div class="text-box-container">
@@ -210,6 +211,14 @@
             </a>
         </div>
     </section>
+
+     <!--For linking of JavaScript-->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script src="app.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
 
 </body>
 </html>
