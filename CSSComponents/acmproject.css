@@ -10,6 +10,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .acmProjectDescContentContainer
@@ -102,6 +103,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.infoImageContainerContainer:hover 
+{
+    transform: scale(1.1);
 }
 
 .infoImageContainer
@@ -221,6 +227,12 @@
 .user-img img
 {
     max-width: 100%;
+}
+
+.userCase
+{
+    width: 250px;
+    aspect-ratio: 1 / 1.4;
 }
 
 .user

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSSComponents/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +64,7 @@
 
     <section class="contact">
         <div class="contactContainer">
-            <div class="contactInfo">
+            <div class="contactInfo" data-aos="fade-right" data-aos-duration="1000">
 
                 <div class="contactBox">
                     <div class="icon"><i class="fa-solid fa-user"></i></div>
@@ -91,7 +92,7 @@
 
             </div>
 
-            <div class="contactForm">
+            <div class="contactForm" data-aos="fade-left" data-aos-duration="1000">
                 <form action="https://formspree.io/f/moqovrvb" method="POST" class="comment-form">
                     <h2>Send Message</h2>
                     <div class="inputBox">
@@ -130,6 +131,14 @@
             </a>
         </div>
     </section>
+
+    <!--For linking of JavaScript-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

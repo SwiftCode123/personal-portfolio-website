@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="CSSComponents/girlyoumatter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,10 +72,10 @@
     <section class="epicsSection">
         <div class="epicsContainer">
             <div class="epicsContainerRow">
-                <div class="epicsImageContainer">
+                <div class="epicsImageContainer" data-aos="fade-right" data-aos-duration="1000">
                     <img src="images/utdlogo.png">
                 </div>
-                <div class="epicsTextContainer">
+                <div class="epicsTextContainer" data-aos="fade-left" data-aos-duration="1000">
                     <h1>What is EPICS?</h1>
                     <div class="epicsTextContainerPClass">
                         <p class="epicsContainerTextPClassContainer">
@@ -94,10 +95,10 @@
     <section class="info">
         <div class="infoContainer">
             <div class="infoContainerRow">
-                <div class="infoImageContainer">
-                    <img src="images/twitchUI.png">
+                <div class="infoImageContainer" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="images/twitchUI.png" >
                 </div>
-                <div class="infoContainerText">
+                <div class="infoContainerText" data-aos="fade-left" data-aos-duration="1000">
                     <h1>Project Description</h1>
                     <div class="infoContainerTextPClass">
                         <p class="infoContainerTextPClassContainer">
@@ -134,7 +135,7 @@
 
     <section class="techStack">
         <div class="techStackContainer">
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1000">
 
                 <!--the image-->
 
@@ -163,7 +164,7 @@
             </div>
 
 
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1100">
 
                 <!--the image-->
 
@@ -192,7 +193,7 @@
             </div>
 
 
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1200">
 
                 <!--the image-->
 
@@ -221,7 +222,7 @@
             </div>
 
             
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1300">
 
                 <!--the image-->
 
@@ -250,7 +251,7 @@
             </div>
 
             
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1400">
 
                 <!--the image-->
 
@@ -279,7 +280,7 @@
             </div>
 
             
-            <div class="techStackUsed">
+            <div class="techStackUsed" data-aos="flip-left" data-aos-duration="1500">
 
                 <!--the image-->
 
@@ -313,7 +314,7 @@
         
     <section class="meetTheTeam">
         <div class="users">
-            <div class="user">
+            <div class="user" data-aos="flip-left" data-aos-duration="1000">
                 <div class="user-img-wrap">
                     <div class="user-img">
                         <img src="images/jahnzebPhoto.png">
@@ -334,7 +335,7 @@
                 </div>
             </div>
 
-            <div class="user">
+            <div class="user" data-aos="flip-left" data-aos-duration="1000">
                 <div class="user-img-wrap">
                     <div class="user-img">
                         <img src="images/DanielPhoto.png">
@@ -355,7 +356,7 @@
                 </div>
             </div>
 
-            <div class="user">
+            <div class="user" data-aos="flip-left" data-aos-duration="1000">
                 <div class="user-img-wrap">
                     <div class="user-img">
                         <img src="images/MaxPhoto.png">
@@ -376,7 +377,7 @@
                 </div>
             </div>
 
-            <div class="user">
+            <div class="user" data-aos="flip-left" data-aos-duration="1000">
                 <div class="user-img-wrap">
                     <div class="user-img">
                         <img src="images/dhruvphoto3.png">
@@ -397,7 +398,7 @@
                 </div>
             </div>
 
-            <div class="user">
+            <div class="user" data-aos="flip-left" data-aos-duration="1000">
                 <div class="user-img-wrap">
                     <div class="user-img">
                         <img src="images/MeghaPhoto.png">
@@ -418,7 +419,7 @@
                 </div>
             </div>
 
-            <div class="user">
+            <div class="user" data-aos="flip-left" data-aos-duration="1000">
                 <div class="user-img-wrap">
                     <div class="user-img">
                         <img src="images/timgivensPhoto.jpg">
@@ -452,6 +453,14 @@
             </a>
         </div>
     </section>
+
+     <!--For linking of JavaScript-->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script src="app.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
 
 </body>
 </html>

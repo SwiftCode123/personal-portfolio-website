@@ -276,9 +276,14 @@ their cursor off the button*/
     background-color: #fff;
 }
 
-.image:hover
+.image img {
+    width: 100%;
+    transition: transform 1s ease-in;
+}
+
+.image img:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .about 
@@ -330,10 +335,6 @@ their cursor off the button*/
 
 .image {
     z-index: 2;
-}
-
-.image img {
-    width: 100%;
 }
 
 @media(max-width: 900px)
