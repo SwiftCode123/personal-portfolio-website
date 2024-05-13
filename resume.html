@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="CSSComponents/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jacquard+12+Charted&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="x-icon" href="images/resumeIcon.png">
+
 </head>
 <body>
     <!--For the header & logo-->
@@ -65,7 +69,7 @@
     </section>
 
     <section class="downloadButtonSection">
-        <div class="downloadButtonContainer">
+        <div class="downloadButtonContainer" data-aos="fade-in" data-aos-duration="2000">
             <div class="downloadButton">
                 <a href="images/Tripathi, Dhruv - UPDATED Resume.pdf" download='Tripathi, Dhruv Resume'
                 class="download-btn">Download Resume
@@ -75,7 +79,7 @@
     </section>
 
     <section class="resumeSection">
-        <div class="resumeOuterContainer">
+        <div class="resumeOuterContainer" data-aos="fade-in" data-aos-duration="2000">
             <div class="resumeInnerContainer">
                 <img src="images/Tripathi_-Dhruv-UPDATED-Resume.svg" alt="">
             </div>
@@ -93,6 +97,14 @@
             </a>
         </div>
     </section>
+
+    <!--For linking of JavaScript-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
