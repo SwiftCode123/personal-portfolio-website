@@ -290,11 +290,13 @@ their cursor off the button*/
 {
     padding: 60px 0;
     background: radial-gradient(ellipse, #0a0aac80, #0000ffc2);
+    overflow: hidden;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .row {
