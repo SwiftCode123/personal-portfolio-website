@@ -157,6 +157,11 @@ section
     opacity: 0;
 }
 
+.timelineContainer .timeline .container-4 p 
+{
+    font-family: "Teachers";
+}
+
 @keyframes moveDown
 {
     0%
@@ -205,6 +210,7 @@ section
     font-size: 15px;
     line-height: 25px;
     z-index: 10;
+    border: solid 2.5px #5240c7;
 }
 
 .left-container
@@ -259,12 +265,14 @@ section
 .text-box-container h2
 {
     font-weight: 600;
+    font-family: "Nunito";
 }
 
 .text-box-container small
 {
     display: inline-block;
     margin-bottom: 15px;
+    font-family: "Nunito";
 }
 
 .left-container-arrow
@@ -276,7 +284,7 @@ section
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #fff;
+    border-left: 15px solid #5240c7;
     right: -15px;
 }
 
@@ -289,7 +297,7 @@ section
     z-index: -1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #fff;
+    border-right: 15px solid #5240c7;
     left: -15px;
 }
 

@@ -113,7 +113,7 @@
 .infoImageContainer
 {
     display: flex;
-    flex-basis: 30%;
+    flex-basis: 35%;
     z-index: 2;
     margin-right: 20px;
     transition: transform 1s ease-in-out;
@@ -207,6 +207,12 @@
     font-size: 25px;
     padding-bottom: 50px;
     background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+}
+
+.appDemoTitle .appDemoTitleContainer h2 
+{
+    font-family: "Teachers";
+    font-weight: 100;
 }
 
 .meetTheTeam
