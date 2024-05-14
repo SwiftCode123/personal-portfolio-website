@@ -284,7 +284,7 @@ section
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #5240c7;
+    border-left: 15px solid #4d3ac4;
     right: -15px;
 }
 
@@ -297,7 +297,7 @@ section
     z-index: -1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #5240c7;
+    border-right: 15px solid #4d3ac4;
     left: -15px;
 }
 
