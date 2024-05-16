@@ -27,6 +27,7 @@
     margin-left: 30px;
     font-family: "Libre Franklin";
     font-weight: 300;
+    color: #fff;
 }
 
 .acmProjectDescContentContainerText
@@ -37,6 +38,7 @@
 .acmProjectDescContentContainerText p 
 {
     font-family: "Teachers";
+    color: #fff;
 }
 
 .iframe-container 
@@ -141,6 +143,7 @@
 {
     font-family: "Libre Franklin";
     font-weight: 300;
+    color: #fff;
 }
 
 .infoContainerTextPClass
@@ -156,6 +159,7 @@
 .infoContainerTextPClassContainer
 {
     font-family: "Teachers";
+    color: #fff;
 }
 
 @media(max-width: 900px)
@@ -213,6 +217,7 @@
 {
     font-family: "Teachers";
     font-weight: 100;
+    color: #fff;
 }
 
 .meetTheTeam

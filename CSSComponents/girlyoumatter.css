@@ -49,11 +49,13 @@
 {
     font-family: "Libre Franklin";
     font-weight: 300;
+    color: #fff;
 }
 
 .gumProjectContainerTextPClassContainer
 {
     font-family: "Teachers";
+    color: #fff;
 }
 
 .gumProjectDescPClass

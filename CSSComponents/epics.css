@@ -49,11 +49,13 @@
 {
     font-family: "Libre Franklin";
     font-weight: 300;
+    color: #fff;
 }
 
 .epicsContainerTextPClassContainer
 {
     font-family: "Teachers";
+    color: #fff;
 }
 
 .epicsTextContainerPClass
