@@ -43,8 +43,9 @@ section
     gap: 100px;
 }
 
-.imgwrap img 
+.imgwrap .boxImage
 {
+    position: relative;
     width: 100%;
     min-height: 130px;
     min-width: 130px;
@@ -131,7 +132,6 @@ section
         text-align: center;
     }
 }
-
 /*Timeline*/
 .timelineContainer
 {
