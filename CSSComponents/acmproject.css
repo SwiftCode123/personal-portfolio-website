@@ -279,7 +279,7 @@
     border-radius: 100%;
 }
 
-.user-img-wrap::after
+/* .user-img-wrap::after
 {
     position: absolute;
     z-index: -1;
@@ -297,7 +297,7 @@
     animation: rotate 4s linear infinite;
     animation-play-state: paused;
     filter: saturate(2) blur(10px);
-}
+} */
 
 .user:hover .user-img-wrap::after
 {
