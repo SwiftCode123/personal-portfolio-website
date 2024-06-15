@@ -367,6 +367,23 @@ their cursor off the button*/
     }
 }
 
+.projectButtonContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.projectButtonContainer .lastUpdated
+{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Nunito';
+}
+
 /*For the typing text animation*/
 .typeWriterContainer
 {
@@ -454,6 +471,7 @@ their cursor off the button*/
     align-items: center;
     color: #fff;
     margin-bottom: 20px;
+    font-family: 'Nunito';
 }
 
 /*For floating box animations*/
