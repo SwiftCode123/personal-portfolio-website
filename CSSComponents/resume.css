@@ -41,13 +41,17 @@ section
 .resumeInnerContainer img
 {
     width: 100%;
-    border: solid 2px #000;
-    transition: transform 1s ease;
 }
 
-.resumeInnerContainer img:hover
-{
-    transform: scale(1.04);
+.resumeInnerContainer {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #000;
+    transition: transform 1s ease-in-out;
+}
+
+.resumeInnerContainer:hover {
+    transform: scale(1.03);
 }
 
 @media(max-width: 500px)

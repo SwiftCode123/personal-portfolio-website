@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codepath Project</title>
+    <link rel="stylesheet" href="CSSComponents/projects.css">
+    <link rel="stylesheet" href="CSSComponents/header.css">
+    <link rel="stylesheet" href="CSSComponents/index.css">
+    <link rel="stylesheet" href="CSSComponents/acmproject.css">
+    <link rel="stylesheet" href="CSSComponents/girlyoumatter.css">
+    <link rel="stylesheet" href="CSSComponents/codepathcyb_101.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jacquard+12+Charted&family=Rajdhani:wght@300;400;500;600;700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jacquard+12+Charted&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="x-icon" href="images/codepathlogo2.png">
+
+</head>
+<body>
+        <!--For the header & logo-->
+        <header class="header">
+            <a href="#" class="logo">Dhruv Tripathi</a>
+    
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class="bx bx-menu" id="menu-icon"></i>
+                <i class="bx bx-x" id="close-icon"></i>
+            </label>
+    
+            <nav class="navbar">
+                <a href="/index.html" style="--i:0;">Home<span></span></a>
+                <!-- <a href="#" style="--i:1;">About<span></span></a> -->
+                <!-- <a href="#" style="--i:2;">Projects<span></span></a> -->
+                <a href="resume.html" style="--i:3;">Resume<span></span></a>
+                <a href="contact.html" style="--i:4;">Contact<span></span></a>
+            </nav>
+        </header>
+
+        <!--https://github.com/SwiftCode123/temperatureconversionapp3-->
+        <section class="acmProjects">
+            <div class="acmProject-container">
+                <div class="acmProject-container-title">
+                    <img src="images/codepathlogo.jpg">
+                    <div class="acmProject-container-title-container">
+                        <div class="acmTitle">
+                            <h2>CodePath</h2>
+                        </div>
+                        <div class="acmFullName">
+                            <p>Intro to Cybersecurity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gumProject">
+            <div class="gumProjectContainer">
+                <div class="gumProjectContainerRow">
+                    <div class="gumImageContainer" data-aos="fade-right" data-aos-duration="1000">
+                        <a href="https://www.codepath.org/courses/cybersecurity?utm_term=&utm_campaign=Performance+Max+TIP+Tuff&utm_source=adwords&utm_medium=ppc&hsa_acc=1387130392&hsa_cam=21246858871&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gbraid=0AAAAACe4_dA8AvDpXKBUf15M8tqieLGaP&gclid=Cj0KCQiA57G5BhDUARIsACgCYnxb20EZiULOorYSskqDnnhyp0pJbc2-FlgML4DMRgRTmT0e5jj35G8aAotMEALw_wcB"><img src="images/codepathlogo2.png">
+                        </a>
+                    </div>
+                    <div class="gumProjectDescText" data-aos="fade-left" data-aos-duration="1000">
+                        <h2>Project Description</h2> <br>
+                        <div class="gumProjectDescPClass">
+                            <p class="gumProjectContainerTextPClassContainer">
+                                Codepath CYB101: Introduction to Cybersecurity is a comprehensive course that introduces essential cybersecurity concepts and tools.
+                                 It covers system basics like Linux commands, SSH, RDP, and PKI, and delves into access control with password hashing.
+                                  Networking fundamentals include IP and DNS exploits, with practical pen-testing using Metasploit. 
+                                  The course explores malware classification and detection, data security through metadata and steganography, 
+                                  and social engineering tactics like phishing and spoofing with tools such as the Social Engineering Toolkit (SET). 
+                                  Privacy topics discuss security versus anonymity, equipping students with a foundational understanding of cybersecurity challenges.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="whole-tab">
+            <div class="tab-container">
+              <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'Unit1')">Unit 1</button>
+                <button class="tab-button" onclick="openTab(event, 'Unit2')">Unit 2</button>
+                <button class="tab-button" onclick="openTab(event, 'Unit3')">Unit 3</button>
+                <button class="tab-button" onclick="openTab(event, 'Unit4')">Unit 4</button>
+                <button class="tab-button" onclick="openTab(event, 'Unit5')">Unit 5</button>
+                <button class="tab-button" onclick="openTab(event, 'Unit6')">Unit 6</button>
+                <button class="tab-button" onclick="openTab(event, 'Unit7')">Unit 7</button>
+                <button class="tab-button gold" onclick="openTab(event, 'Unit8')">Unit 8</button>
+                <button class="tab-button gold" onclick="openTab(event, 'Unit9')">Unit 9</button>
+                <button class="tab-button gold" onclick="openTab(event, 'Unit10')">Unit 10</button>
+              </div>
+          
+              <div id="Unit1" class="tab-content active">
+                <div class="tab-content-left">Unit 1</div>
+                <div class="tab-content-middle">
+                    <div class="learned-title">
+                        <h3>What I learned in Unit 1</h3>
+                    </div>                        
+                        <li>How to build a security mindset</li>
+                        <li>CIA Triad - Confidentiality, Integrity, and Availability</li>
+                        <li>Cybersecurity assets: Company, People, Information, Technology, Facility</li>
+                        <li>Vulnerabilities, Threats and Risks</li>
+                        <li>Types of threat actors</li>
+                        <li>Control Functions & Types</li>
+                        <li>Honeypots and Incident Response Plan</li>
+                        <li>NIST Framework</li>
+                        <li>CyberChef & Solving CTFs</li>
+                </div>
+                    <div class="tab-content-right">
+                        <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                            <img src="images/ctflogo.png" alt="Unit 1 Image" />
+                        </a>
+                    </div>
+                </div>
+            
+          
+                <div id="Unit2" class="tab-content">
+                    <div class="tab-content-left">Unit 2</div>
+                    <div class="tab-content-middle">
+                        <div class="learned-title">
+                            <h3>What I learned in Unit 2</h3>
+                        </div>                        
+                            <li>Operating a VM - Ubuntu</li>
+                            <li>Unix commands such as: sudo, ssh, pwd, ls, cd, cd.. </li>
+                            <li>Navigating a filesystem</li>
+                            <li>Moving files from one directory to another via terminal</li>
+                            <li>Creating, using, authenticating & encrypting SSH keys</li>
+                            <li>Git configuring & signing</li>
+                            <li>Ciphers such as Caesar cipher, ROT-1</li>
+                            <li>Hashing, hashing algos (SHA-256), pepper/salt values </li>
+                            <li>Private/public keys</li>
+                            <li>SSL protocol, certificates, TLS handshake</li>
+                    </div>
+                        <div class="tab-content-right">
+                            <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                                <img src="image1.png" alt="Unit 1 Image" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="Unit3" class="tab-content">
+                        <div class="tab-content-left">Unit 3</div>
+                        <div class="tab-content-middle">
+                            <div class="learned-title">
+                                <h3>What I learned in Unit 3</h3>
+                            </div>                        
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                        </div>
+                            <div class="tab-content-right">
+                                <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                                    <img src="image1.png" alt="Unit 1 Image" />
+                                </a>
+                            </div>
+                        </div>
+
+                    <div id="Unit4" class="tab-content">
+                    <div class="tab-content-left">Unit 4</div>
+                    <div class="tab-content-middle">
+                        <div class="learned-title">
+                            <h3>What I learned in Unit 4</h3>
+                        </div>                        
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                    </div>
+                        <div class="tab-content-right">
+                            <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                                <img src="image1.png" alt="Unit 1 Image" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="Unit5" class="tab-content">
+                        <div class="tab-content-left">Unit 5</div>
+                        <div class="tab-content-middle">
+                            <div class="learned-title">
+                                <h3>What I learned in Unit 5</h3>
+                            </div>                        
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                    </div>
+                        <div class="tab-content-right">
+                            <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                                <img src="image1.png" alt="Unit 1 Image" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="Unit6" class="tab-content">
+                        <div class="tab-content-left">Unit 6</div>
+                        <div class="tab-content-middle">
+                            <div class="learned-title">
+                                <h3>What I learned in Unit 6</h3>
+                            </div>                        
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                </div>
+                    <div class="tab-content-right">
+                        <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                            <img src="image1.png" alt="Unit 1 Image" />
+                        </a>
+                    </div>
+                </div>
+
+                <div id="Unit7" class="tab-content">
+                    <div class="tab-content-left">Unit 7</div>
+                    <div class="tab-content-middle">
+                        <div class="learned-title">
+                            <h3>What I learned in Unit 7</h3>
+                        </div>                        
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                    </div>
+                        <div class="tab-content-right">
+                            <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                                <img src="image1.png" alt="Unit 1 Image" />
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div id="Unit8" class="tab-content">
+                        <div class="tab-content-left">Unit 8</div>
+                        <div class="tab-content-middle">
+                            <div class="learned-title">
+                                <h3>What I learned in Unit 8</h3>
+                            </div>                        
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                        </div>
+                            <div class="tab-content-right">
+                                <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                                    <img src="image1.png" alt="Unit 1 Image" />
+                                </a>
+                            </div>
+                        </div>
+
+
+                    <div id="Unit9" class="tab-content">
+                        <div class="tab-content-left">Unit 9</div>
+                        <div class="tab-content-middle">
+                            <div class="learned-title">
+                                <h3>What I learned in Unit 9</h3>
+                            </div>                        
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                        </div>
+                            <div class="tab-content-right">
+                                <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                                    <img src="image1.png" alt="Unit 1 Image" />
+                                </a>
+                            </div>
+                        </div>
+
+                    <div id="Unit10" class="tab-content">
+                        <div class="tab-content-left">Unit 10</div>
+                        <div class="tab-content-middle">
+                            <div class="learned-title">
+                                <h3>What I learned in Unit 10</h3>
+                            </div>                        
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                        </div>
+                            <div class="tab-content-right">
+                                <a href="https://www.hackthebox.com/blog/what-is-ctf#mcetoc_1gflp2k395at">
+                                    <img src="image1.png" alt="Unit 1 Image" />
+                                </a>
+                            </div>
+                        </div>
+            
+            </div>
+          </section>
+          
+          
+        <section class="backButton">
+            <div class="projectButton">
+                <a href="/projects.html" id="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Projects
+                </a>
+            </div>
+        </section>
+
+        <!--For linking of JavaScript-->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+    
+</body>
+</html>

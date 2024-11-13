@@ -48,3 +48,20 @@ var typed = new Typed(".auto-type", {
     backSpeed: 150,
     loop: true
 })
+
+function openTab(event, tabId) {
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content').forEach(content => {
+      content.classList.remove('active');
+    });
+  
+    // Remove active class from all tab buttons
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.classList.remove('active');
+    });
+  
+    // Show the clicked tab content and add active class to the clicked button
+    document.getElementById(tabId).classList.add('active');
+    event.currentTarget.classList.add('active');
+  }
+  

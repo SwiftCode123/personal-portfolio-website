@@ -1,4 +1,3 @@
-/* Core Styles */
 *,
 *:before,
 *:after {
@@ -191,3 +190,8 @@ section {
     opacity: 0.1;
   }
   
+  /*Anchor tag link*/
+  .aLink
+  {
+    color: rgb(255, 255, 255);
+  } 

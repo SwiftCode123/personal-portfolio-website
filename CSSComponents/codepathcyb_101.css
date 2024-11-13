@@ -1,0 +1,222 @@
+/* Main section background */
+.cybUnitSection {
+  background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+}
+
+/* Container for all tabs */
+.cybUnitContainer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Each unit's content container */
+.cybUnitContentContainer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 1.5px rgb(0, 0, 0);
+  width: 50rem;
+  max-width: 700px;
+  background: linear-gradient(to right, rgba(255, 255, 255), rgba(108, 195, 150, 255));
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Styling for unit number */
+.cybUnitNumber {
+  padding: 2rem;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #073b72;
+}
+
+/* Styling for "What I learned" text */
+.cybUnitText {
+  max-width: 400px;
+  padding: 2rem;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Whole-tab and tab-container styles */
+.whole-tab {
+  background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling the tab buttons */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tab-button {
+  padding: 10px 15px;
+  font-size: 1.1em;
+  color: #073b72;
+  background-color: transparent;
+  border: 1px solid #054589;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  margin: 5px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Hover effect for tabs */
+.tab-button:hover {
+  background-color: rgba(0, 86, 179, 0.2);
+  color: #ffffff;
+}
+
+/* Active tab styling */
+.tab-button.active {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Gold styling for Unit 8, 9, and 10 */
+.tab-button.gold {
+  color: #ffd700;
+  background-color: transparent;
+  border: 1px solid #ffd700;
+}
+
+.tab-button.gold:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+  color: #ffffff;
+}
+
+.tab-button.gold.active {
+  background-color: #ffd700;
+  color: #656565;
+  font-weight: bold;
+}
+
+/* Tab content with a three-column layout */
+.tab-content {
+  display: none;
+  padding: 30px;
+  background-color: transparent;
+  border: solid 1px #054589;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  font-size: 1.1em;
+}
+
+/* Show active tab content */
+.tab-content.active {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Left section (Unit number) */
+.tab-content-left {
+  flex: 1;
+  font-weight: bold;
+  color: #054589;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Middle section (What I learned) */
+.tab-content-middle {
+  flex: 3;
+  font-size: 1em;
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Right section (Image) */
+.tab-content-right {
+  flex: 1;
+  text-align: right;
+}
+
+.tab-content-right img {
+  max-width: 100px;
+  border-radius: 8px;
+}
+
+.learned-title {
+  padding: 10px 20px;
+  border: 2px solid #054589;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  animation: floatTitle 4s ease-in-out infinite;
+  display: inline-block; 
+}
+
+/* Floating animation for the title */
+@keyframes floatTitle {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-8px);
+  }
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+
+  .tab-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .tab-content-left, .tab-content-middle, .tab-content-right {
+      flex: none;
+      padding: 10px 0;
+      font-size: 1em;
+  }
+
+  .tab-content-right img {
+      max-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-button {
+      padding: 8px 10px;
+      font-size: 0.9em;
+      min-width: 80px;
+  }
+
+  .tab-container {
+      padding: 15px;
+  }
+
+  .tab-content {
+      padding: 20px;
+  }
+}
+
