@@ -133,6 +133,7 @@
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  background-color: rgb(100, 126, 231);
 }
 
 /* Left section (Unit number) */
@@ -150,6 +151,11 @@
   font-size: 1em;
   text-align: center;
   max-width: 400px;
+}
+
+.tab-content-middle li 
+{
+  font-family: 'Nunito';
 }
 
 /* Right section (Image) */
@@ -182,7 +188,6 @@
       transform: translateY(-8px);
   }
 }
-
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
