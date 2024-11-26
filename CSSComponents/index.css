@@ -19,6 +19,7 @@ body
 section
 {
     padding: 25px;
+    overflow: hidden;
 }
 /*For header title*/
 
@@ -326,6 +327,14 @@ their cursor off the button*/
     font-weight: 300;
 }
 
+@media(max-width: 280px)
+{
+    .content
+    {
+        word-break: break-all;
+    }
+}
+
 .about-text
 {
     text-align: center;
@@ -349,7 +358,6 @@ their cursor off the button*/
 
     .image img
     {
-        width: 50%;
         display: inline;
         margin-top: 20px;
     }

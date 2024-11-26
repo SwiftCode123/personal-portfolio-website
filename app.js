@@ -63,5 +63,15 @@ function openTab(event, tabId) {
     // Show the clicked tab content and add active class to the clicked button
     document.getElementById(tabId).classList.add('active');
     event.currentTarget.classList.add('active');
+  
+    // Show or hide the slides section based on the active tab
+    const slidesSection = document.getElementById("unit10-slides");
+    if (tabId === "Unit10") {
+      slidesSection.style.display = "block"; // Show slides
+    } else {
+      slidesSection.style.display = "none"; // Hide slides
+    }
   }
+  
+  
   
