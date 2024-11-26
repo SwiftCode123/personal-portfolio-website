@@ -132,8 +132,45 @@ section
         text-align: center;
     }
 }
+
+/*Additional Projects Button*/
+.addProjButton 
+{
+    text-align: center;
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2); 
+}
+
+.addProjButtonContainer .btn 
+{
+    background: radial-gradient(ellipse, #0000ff80, #0000ffc2); 
+    color: white;
+    font-size: 120%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.addProjButtonContainer .btn:hover 
+{
+    background: radial-gradient(ellipse, #0000ff99, #0000ffcc); 
+    transform: scale(1.05); 
+}
+
+.addProjButtonContainer .btn:active 
+{
+    transform: scale(0.98); 
+}
+
+.addProjButtonContainer .btn:focus 
+{
+    outline: none; 
+}
+
+
 /*Timeline*/
-.timelineContainer
+/* .timelineContainer
 {
     background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
     overflow: hidden;
@@ -359,5 +396,5 @@ section
     {
         word-break: break-all;
     }
-}
+} */
 /*END OF TIMELINE PAGE*/
