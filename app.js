@@ -43,33 +43,34 @@ textLoad();
 setInterval(textLoad, 12000);
 
 var typed = new Typed(".auto-type", {
-    strings: ["Curious", "Passionate", "Artistic"],
-    typeSpeed: 150,
-    backSpeed: 150,
+    strings: ["Hacker", "Defender", "Investigator"],
+    typeSpeed: 85,
+    backSpeed: 85,
     loop: true
 })
 
-function openTab(event, tabId) {
-    // Hide all tab contents
+function openTab(event, tabId) 
+{
+    //Hide all tab contents
     document.querySelectorAll('.tab-content').forEach(content => {
       content.classList.remove('active');
     });
   
-    // Remove active class from all tab buttons
+    //Remove active class from all tab buttons
     document.querySelectorAll('.tab-button').forEach(button => {
       button.classList.remove('active');
     });
   
-    // Show the clicked tab content and add active class to the clicked button
+    //Show the clicked tab content and add active class to the clicked button
     document.getElementById(tabId).classList.add('active');
     event.currentTarget.classList.add('active');
   
-    // Show or hide the slides section based on the active tab
+    //Show or hide the slides section based on the active tab
     const slidesSection = document.getElementById("unit10-slides");
     if (tabId === "Unit10") {
-      slidesSection.style.display = "block"; // Show slides
+      slidesSection.style.display = "block"; 
     } else {
-      slidesSection.style.display = "none"; // Hide slides
+      slidesSection.style.display = "none";
     }
   }
   

@@ -352,12 +352,12 @@ section
 {
     .timelineContainer .timeline .container-4 .text-box-container
     {
-        font-size: 9px;
+        word-break: break-all;
     }
 
     .timelineContainer .timeline .container-4 .text-box-container h2
     {
-        font-size: 8px;
+        word-break: break-all;
     }
 }
 /*END OF TIMELINE PAGE*/
