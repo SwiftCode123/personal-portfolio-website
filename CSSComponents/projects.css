@@ -134,8 +134,10 @@ section
 }
 
 /*Additional Projects Button*/
-.addProjButton 
+/* .addProjButton 
 {
+    display: flex;
+    justify-content: center;
     text-align: center;
     background: radial-gradient(ellipse, #0000ff80, #0000ffc2); 
 }
@@ -166,7 +168,7 @@ section
 .addProjButtonContainer .btn:focus 
 {
     outline: none; 
-}
+} */
 
 
 /*Timeline*/
