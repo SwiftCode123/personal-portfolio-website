@@ -67,6 +67,32 @@ section
     background: rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
 }
+
+.imageText 
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    transition: all 0.3s ease-in-out;
+}
+
+.hoveringContainer:hover .imageText 
+{
+    background: rgba(207, 207, 207, 0.1); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+}
+
+
 /*END OF ABOVE CODE*/
 /*ACM PROJECTS PAGE*/
 .acmProjectDesc
@@ -170,233 +196,3 @@ section
     outline: none; 
 } */
 
-
-/*Timeline*/
-/* .timelineContainer
-{
-    background: radial-gradient(ellipse, #0000ff80, #0000ffc2);
-    overflow: hidden;
-    padding-bottom: 100px;
-}
-
-.timeline
-{
-    position: relative;
-    max-width: 1200px;
-    margin: 100px auto;
-    z-index: 1;
-}
-
-.timelineContainer .timeline .container-4
-{
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-    animation: moveDown 1s linear forwards;
-    opacity: 0;
-}
-
-.timelineContainer .timeline .container-4 p 
-{
-    font-family: "Teachers";
-}
-
-@keyframes moveDown
-{
-    0%
-    {
-        opacity: 1;
-        transform: translateY(-30px);
-    }
-    100%
-    {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-.timeline .container-4:nth-child(1)
-{
-    animation-delay: 0s;
-}
-
-.timeline .container-4:nth-child(2)
-{
-    animation-delay: 1s;
-}
-
-.timeline .container-4:nth-child(3)
-{
-    animation-delay: 3s;
-}
-
-.timeline .container-4:nth-child(4)
-{
-    animation-delay: 4s;
-}
-
-.timeline .container-4:nth-child(5)
-{
-    animation-delay: 5s;
-}
-
-.text-box-container
-{
-    padding: 20px 30px;
-    background: #fff;
-    position: relative;
-    border-radius: 6px;
-    font-size: 15px;
-    line-height: 25px;
-    z-index: 10;
-    border: solid 2.5px #5240c7;
-}
-
-.left-container
-{
-    left: 0;
-}
-
-.right-container
-{
-    left: 50%;
-}
-
-.container-4 img
-{
-    position: absolute;
-    width: 40px;
-    right: -20px;
-    top: 32px;
-    z-index: 10;
-}
-
-.right-container img
-{
-    left: -20px;    
-}
-
-.timeline::after
-{
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: #fff;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-    animation: moveline 6s linear forwards;
-}
-
-@keyframes moveline {
-    0%
-    {
-        height: 0;
-    }
-    100%
-    {
-        height: 100%;
-    }
-}
-
-.text-box-container h2
-{
-    font-weight: 600;
-    font-family: "Nunito";
-}
-
-.text-box-container small
-{
-    display: inline-block;
-    margin-bottom: 15px;
-    font-family: "Nunito";
-}
-
-.left-container-arrow
-{
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid #4d3ac4;
-    right: -15px;
-}
-
-.right-container-arrow
-{
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: -1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid #4d3ac4;
-    left: -15px;
-}
-
-@media(max-width: 600px)
-{
-    .timelineContainer .timeline
-    {
-        margin: 50px auto;
-    }
-
-    .timelineContainer .timeline::after
-    {
-        left: 31px;
-    }
-
-    .timelineContainer .timeline .container-4
-    {
-        width: 100%;
-        padding-left: 80px;
-        padding-right: 25px
-    }
-
-    .timelineContainer .timeline .container-4 .text-box-container
-    {
-        font-size: 13px;
-    }
-
-    .timelineContainer .timeline .container-4 .text-box-container small
-    {
-        margin-bottom: 10px;
-    }
-
-    .right-container
-    {
-        left: 0;
-    }
-
-    .left-container img, .right-container img
-    {
-        left: 10px;
-    }
-
-    .left-container-arrow, .right-container-arrow
-    {
-        border-right: 15px solid #fff;
-        border-left: 0;
-        left: -15px;
-    }
-}
-
-@media(max-width: 320px)
-{
-    .timelineContainer .timeline .container-4 .text-box-container
-    {
-        word-break: break-all;
-    }
-
-    .timelineContainer .timeline .container-4 .text-box-container h2
-    {
-        word-break: break-all;
-    }
-} */
-/*END OF TIMELINE PAGE*/
